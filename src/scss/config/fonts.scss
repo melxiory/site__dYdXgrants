@@ -1,14 +1,42 @@
 @font-face {
+	font-family: Circular Std;
+	font-display: swap;
+	src: url("../fonts/CircularStdBlack.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
 	font-family: Inter;
 	font-display: swap;
-	src: url("../fonts/Inter-Bold.woff2") format("woff2");
+	src: url("../fonts/CircularStdBold.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: Inter;
 	font-display: swap;
-	src: url("../fonts/Inter-Regular.woff2") format("woff2");
+	src: url("../fonts/CircularStdMedium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("../fonts/CircularStdBook.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("../fonts/SpaceMono-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("../fonts/SpaceMono-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
