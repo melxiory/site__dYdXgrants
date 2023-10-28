@@ -1,1 +1,34 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+// Buttons
+// <--######################################-->
+.button{
+  display: inline-block;
+  padding: rem(12) rem(16);
+  border-radius: 7.29px;
+  background: var(--accent-brand, #6966FF);
+  letter-spacing: rem(-0.176);
+  color: var(--primary-text, #FFF);
+  &--after{
+    position: relative;
+    padding-right: rem(45);
+    &::after{
+      position: absolute;
+      content: url(../images/button_parts/right.svg);
+      right: rem(16);
+      top: rem(12);
+    }
+  }
+  &--before{
+    position: relative;
+    padding-left: rem(45);
+    &::before{
+      position: absolute;
+      content: url(../images/button_parts/right.svg);
+      left: rem(16);
+      top: rem(12);
+    }
+  }
+}
+// <--######################################-->
+

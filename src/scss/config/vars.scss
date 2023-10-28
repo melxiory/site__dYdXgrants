@@ -11,17 +11,17 @@ $footerHeight: 100;
   --bs-font-family: 'Circular Std', sans-serif; // Семейство шрифта по умолчанию
   --bs-font-size: 16px; // Размер шрифта по умолчанию
   --bs-font-weight: 400; // Жирность шрифта по умолчанию
-  --bs-line-height: 1; // Базовая высота шрифта
+  --bs-line-height: 24px; // Базовая высота шрифта
   --bs-font-color: #222; // Цвет шрифта по умолчанию
   --bs-transition: .3s ease-in-out;
   --bs-radius: 10px;
 
 
   // Accent
-  --brand-color: #6966FF;
-  --brand-hover-color: #6C83FF;
-  --red-color: #E45555;
-  --green-color: #16B57F;
+  --accent-brand: #6966FF;
+  --accent-brand-hover: #6C83FF;
+  --accent-red: #E45555;
+  --accent-green: #16B57F;
 
   // Background
   --primary-background: #1C1C28;
