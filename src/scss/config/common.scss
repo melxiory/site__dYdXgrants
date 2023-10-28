@@ -9,6 +9,10 @@
   background: var(--accent-brand, #6966FF);
   letter-spacing: rem(-0.176);
   color: var(--primary-text, #FFF);
+  font-size: var(--bs-font-size);
+  font-family: var(--bs-font-family);
+  font-weight: var(--bs-font-weight);
+  line-height: var(--bs-line-height);
   &--after{
     position: relative;
     padding-right: rem(45);
@@ -16,7 +20,7 @@
       position: absolute;
       content: url(../images/button_parts/right.svg);
       right: rem(16);
-      top: rem(12);
+      top: rem(14);
     }
   }
   &--before{
@@ -26,9 +30,30 @@
       position: absolute;
       content: url(../images/button_parts/right.svg);
       left: rem(16);
-      top: rem(12);
+      top: rem(14);
     }
   }
 }
 // <--######################################-->
 
+// Badges
+// <--######################################-->
+.badg{
+  display: inline-block;
+  padding: rem(4) rem(16);
+  border-radius: 100px;
+  background: var(--accent-brand, #6966FF);
+  letter-spacing: rem(-0.176);
+  color: var(--primary-text, #FFF);
+  &--after{
+    position: relative;
+    padding-right: rem(40);
+    &::after{
+      position: absolute;
+      content: url(../images/badges/check.svg);
+      right: rem(16);
+      top: rem(8);
+    }
+  }
+}
+// <--######################################-->
