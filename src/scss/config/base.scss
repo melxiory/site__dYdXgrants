@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-
+  background: var(--background-primary, #1C1C28);
   /** Поменять на clip - если используется в проекте position: sticky */
   overflow: hidden;
 }

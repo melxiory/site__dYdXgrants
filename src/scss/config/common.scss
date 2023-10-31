@@ -57,3 +57,20 @@
   }
 }
 // <--######################################-->
+
+// Avatar
+// <--######################################-->
+.avatar{
+  display: inline-flex;
+  padding: rem(8) rem(24) rem(8) rem(8);
+  justify-content: center;
+  align-items: center;
+  gap: rem(16);
+  border-radius: 100px;
+  background: var(--background-secondary, #393953);
+  &__name{
+    letter-spacing: rem(-0.176);
+    color: var(--primary-text, #FFF);
+  }
+}
+// <--######################################-->

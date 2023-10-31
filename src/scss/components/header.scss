@@ -1,23 +1,34 @@
 .header {
   width: 100%;
-  transition: background-color var(--bs-transition);
-  z-index: 50;
-
-  .header-is-sticky & {
-    // ..стили для липкого хедера
-    position: fixed;
-    background-color: #007aff;
-  }
-
-  // .header__container
   &__container {
     height: rem($headerHeight);
+  }
+  &__flex {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-
-    .header-is-sticky & {
-      height: rem($headerHeight - 50);
-    }
+    padding: rem(24) rem(32);
+  }
+  &__img{
+    max-height: rem(65);
+  }
+}
+.menu {
+  display: flex;
+  gap: rem(32);
+  align-items: center;
+  &__btn {
+    display: block;
+  }
+  &__item {
+  }
+  &__link {
+    color: var(--secondary-text, #C8C7D8);
+    font-family: RationalTWText;
+  }
+  &__list {
+    display: flex;
+    gap: rem(32);
   }
 }
 
