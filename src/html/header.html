@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header">  
   <div class="header__container">
     <div class="header__flex">
       <a href="#" class="header__logo"><img class="header__img" src="../images/logos/ligthColorLogo.svg" alt="img"></a>
@@ -10,7 +10,8 @@
           <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
           <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
         </ul>
-        <button class="menu__btn button">Apply for grant</button>
+        <button class="menu__btn button"><span class="menu__btn-long">Apply for grant</span><span class="menu__btn-short">Apply</span></button>
+        @@include('./iconMenu.html', {})
       </nav>
     </div>
   </div>

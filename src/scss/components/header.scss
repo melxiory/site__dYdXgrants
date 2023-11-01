@@ -1,5 +1,8 @@
+
+
 .header {
   width: 100%;
+  position: relative;
   &__container {
     height: rem($headerHeight);
   }
@@ -11,6 +14,8 @@
   }
   &__img{
     max-height: rem(65);
+    position: relative;
+    z-index: 10;
   }
 }
 .menu {
@@ -19,8 +24,19 @@
   align-items: center;
   &__btn {
     display: block;
-  }
-  &__item {
+    position: relative;
+    z-index: 10;
+    &-long{
+      @include media-mx(1100) {
+        display: none;
+      }
+    }
+    &-short{
+      display: none;
+      @include media-mx(1100) {
+        display: inline-block;
+      }
+    }
   }
   &__link {
     color: var(--secondary-text, #C8C7D8);
@@ -29,21 +45,26 @@
   &__list {
     display: flex;
     gap: rem(32);
+    @include media-mx(1100) {
+      display: none;
+    }
   }
 }
 
+
 // Burger
-/*
+
 .icon-menu {
   display: none;
 
-  @include media-mx(768) {
+  @include media-mx(1100) {
     display: block;
     position: relative;
-    width: rem(30);
-    height: rem(18);
+    width: rem(18);
+    height: rem(14);
     cursor: pointer;
-    z-index: 5;
+    z-index: 10;
+    background: none;
 
     span,
     &::before,
@@ -54,7 +75,7 @@
       position: absolute;
       width: 100%;
       height: rem(2);
-      background-color: #000;
+      background-color: var(--primary-text);
     }
 
     &::before {
@@ -86,4 +107,4 @@
     }
   }
 }
-*/
+
