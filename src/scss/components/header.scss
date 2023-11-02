@@ -11,6 +11,9 @@
     justify-content: space-between;
     align-items: center;
     padding: rem(24) rem(32);
+    @include media-mx(1100) {
+      padding: rem(24) 0;
+    }
   }
   &__img{
     max-height: rem(65);

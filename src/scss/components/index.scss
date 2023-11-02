@@ -1,0 +1,67 @@
+// ######### Section - hero ###########
+.hero {
+  &__button-left{
+    background: var(--background-secondary, #393953);
+    padding-left: rem(30);
+    padding-right: rem(30);
+  }
+  &__buttons {
+    margin-top: rem(50);
+    display: flex;
+    justify-content: center;
+    gap: rem(32);
+  }
+  &__flex {
+    margin: 0 auto;
+    padding-top: rem(80);
+    display: flex;
+    flex-direction: column;
+    gap: rem(80);
+    align-items: center;
+    max-width: rem(800);
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    gap: rem(110);
+  }
+  &__info-text {
+    text-align: center;
+    color: var(--text-icon-secondary, #C8C7D8);
+    font-family: RationalTWText;
+    font-size: rem(18);
+    line-height: rem(24);
+    span {
+      color: var(--base-white, #FFF);
+      font-size: rem(20);
+      line-height: rem(32);
+    }
+  }
+  &__title {
+    color: var(--primary-text, #FFF);
+    text-align: center;
+    font-weight: 700;
+    @include adaptiveClamp('font-size', 80, 40);
+    @include adaptiveClamp('line-height', 88, 48);
+    @include adaptiveClamp('letter-spacing', -1.76, -0.84);
+    span{
+      position: relative;
+      &::after{
+        position: absolute;
+        display: block;
+        content: '';
+        background-image: url(../images/sketches/line.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: rem(24);
+        top: rem(90);
+        right: rem(-20);
+        @include adaptiveClamp('width', 280, 115);
+        @include adaptiveClamp('top', 90, 40);
+      }
+    }
+  }
+}
+// ######################################
+
