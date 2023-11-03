@@ -83,6 +83,8 @@
   text-align: center;
   &__link {
     position: relative;
+    width: max-content;
+    margin: 0 auto;
     display: block;
     margin-top: rem(25);
     color: var(--accent-brand, #6966FF);
@@ -91,7 +93,9 @@
     @include adaptiveClamp('font-size', 18, 16);
     &::after{
       position: absolute;
-      content: '';
+      content: url(../images/index_page/arrow-right.svg);
+      right: rem(-30);
+      top: 0;
     }
   }
   &__text {
@@ -108,5 +112,39 @@
     @include adaptiveClamp('font-size', 40, 24);
     @include adaptiveClamp('line-height', 48, 32);
   }
+}
+// <--######################################-->
+
+// Swyper
+// <--######################################-->
+.swiper{
+  overflow: visible;
+}
+.swiper-button-prev{
+	&::after{
+    position: absolute;
+		content: url(../images/controls/arrow-left.svg);
+    top: -1px;
+	}
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background: var(--base-white, #FFF);
+}
+.swiper-button-next{
+	&::after{
+    position: absolute;
+		content: url(../images/controls/arrow-right.svg);
+    top: -1px;
+	}
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+  background: var(--base-white, #FFF);
+}
+.disabled_swiper_button {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
 }
 // <--######################################-->

@@ -65,3 +65,61 @@
 }
 // ######################################
 
+// ######### Section - grant ###########
+.grant {
+  position: relative;
+  &__avatar {
+    margin-left: -15px;
+  }
+  &__avatars {
+    position: absolute;
+    bottom: rem(24);
+    left: rem(39);
+    display: flex;
+  }
+  &__card {
+    height: rem(560);
+    max-width: rem(390);
+    width: 100%;
+    border-radius: 16px;
+    background: var(--background-secondary, #393953);
+  }
+  &__card-container{
+    padding: rem(24);
+    display: flex;
+    gap: rem(10);
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__card-text {
+    color: var(--primary-text, #FFF);
+    font-weight: 450;
+    letter-spacing: -0.176px;
+    margin-top: rem(15);
+  }
+  &__card-text-info {
+    color: var(--tertiary-text, #A59EBA);
+    font-family: RationalTWText;
+    letter-spacing: -0.456px;
+  }
+  &__card-title {
+    color: var(--primary-text, #FFF);
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: rem(32); 
+    letter-spacing: -0.456px;
+  }
+  &__cards {
+    padding-left: rem(20);
+  }
+  &__container {
+    padding: 0 rem(108);
+  }
+  &__swiper {
+    margin-top: rem(80);
+  }
+  &__title {
+    padding-top: rem(30);
+  }
+}
+// ######################################

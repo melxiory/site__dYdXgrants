@@ -23,7 +23,8 @@
 * раскомментировать для использования
 */
 // @import 'libs/aos';
-// @import 'libs/swiper';
+@import 'node_modules/swiper/swiper';
+@import 'node_modules/swiper/modules/navigation';
 
 /**
 * Подключение custom scrollbar для всего сайта

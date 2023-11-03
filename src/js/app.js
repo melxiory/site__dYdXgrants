@@ -7,8 +7,8 @@
  * Если мы хотим добавить модуль следует его раскомментировать
  */
 // import MousePRLX from './libs/parallaxMouse'
-// import AOS from 'aos'
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import BaseHelpers from './helpers/BaseHelpers.js';
 import PopupManager from './modules/PopupManager';
@@ -62,3 +62,16 @@ new Accordion('.accordion', {
 	defaultOpen: [], // [0,1]
 	collapsedClass: 'open',
 });
+
+
+let swiper = new Swiper(".swiper", {
+	slidesPerView: 3,
+	spaceBetween: 25,
+	modules: [Navigation,],
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+		disabledClass: 'disabled_swiper_button'
+	},
+});
+
