@@ -1,5 +1,40 @@
 // Заголовки, общие БЄМ блоки и проче...
 
+// Primary text and title
+// <--######################################-->
+.title-h1{
+  color: var(--primary-text, #FFF);
+  text-align: center;
+  font-weight: 700;
+  @include adaptiveClamp('font-size', 60, 32);
+  @include adaptiveClamp('line-height', 72, 40);
+}
+.title-h2{
+  color: var(--primary-text, #FFF);
+  font-weight: 700;
+  letter-spacing: -0.88px;
+  @include adaptiveClamp('font-size', 40, 24);
+  @include adaptiveClamp('line-height', 48, 32);
+}
+.title-h3{
+  color: var(--primary-text, #FFF);
+  font-weight: 700;
+  line-height: rem(32); 
+  letter-spacing: -0.456px;
+  @include adaptiveClamp('font-size', 24, 20);
+}
+.text-primary{
+  color: var(--primary-text, #FFF);
+  font-weight: 450;
+  letter-spacing: -0.176px;
+}
+.text-secondary{
+  color: var(--tertiary-text, #A59EBA);
+  font-family: RationalTWText;
+  letter-spacing: -0.456px;
+}
+// <--######################################-->
+
 // Buttons
 // <--######################################-->
 .button{
@@ -75,7 +110,7 @@
 }
 // <--######################################-->
 
-// Title
+// Sections title
 // <--######################################-->
 .title-box {
   margin: 0 auto;
@@ -104,13 +139,6 @@
     line-height: 24px; 
     letter-spacing: -0.252px;
     @include adaptiveClamp('font-size', 18, 16);
-  }
-  &__title {
-    color: var(--primary-text, #FFF);
-    font-weight: 700;
-    letter-spacing: -0.88px;
-    @include adaptiveClamp('font-size', 40, 24);
-    @include adaptiveClamp('line-height', 48, 32);
   }
 }
 // <--######################################-->

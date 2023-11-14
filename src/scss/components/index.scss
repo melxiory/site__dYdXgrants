@@ -38,12 +38,9 @@
     }
   }
   &__title {
-    color: var(--primary-text, #FFF);
-    text-align: center;
-    font-weight: 700;
+    letter-spacing: -1.76px;
     @include adaptiveClamp('font-size', 80, 40);
     @include adaptiveClamp('line-height', 88, 48);
-    @include adaptiveClamp('letter-spacing', -1.76, -0.84);
     span{
       position: relative;
       &::after{
@@ -69,7 +66,7 @@
 .grant {
   position: relative;
   &__avatar {
-    margin-left: -15px;
+    margin-left: rem(-15);
   }
   &__avatars {
     position: absolute;
@@ -92,25 +89,11 @@
     justify-content: space-between;
   }
   &__card-text {
-    color: var(--primary-text, #FFF);
-    font-weight: 450;
-    letter-spacing: -0.176px;
     margin-top: rem(15);
-  }
-  &__card-text-info {
-    color: var(--tertiary-text, #A59EBA);
-    font-family: RationalTWText;
-    letter-spacing: -0.456px;
-  }
-  &__card-title {
-    color: var(--primary-text, #FFF);
-    font-size: rem(24);
-    font-weight: 700;
-    line-height: rem(32); 
-    letter-spacing: -0.456px;
   }
   &__cards {
     padding-left: rem(20);
+    margin-bottom: rem(80);
   }
   &__container {
     padding: 0 rem(108);
@@ -120,6 +103,144 @@
   }
   &__title {
     padding-top: rem(30);
+  }
+}
+// ######################################
+
+// ######### Section - grant ###########
+.news {
+  &__card {
+    position: relative;
+    height: rem(440);
+    max-width: rem(392);
+    border-radius: 16px;
+    background: var(--background-secondary, #393953);
+  }
+  &__card-container {
+    padding: rem(24);
+  }
+  &__cards {
+    display: flex;
+    gap: rem(25);
+    justify-content: center;
+  }
+  &__category {
+    margin-bottom: rem(10);
+  }
+  &__container {
+    padding: rem(80) 0;
+  }
+  &__date {
+    position: absolute;
+    bottom: rem(24);
+    left: rem(24);
+  }
+  &__title {
+    margin-bottom: rem(80);
+    h2{
+      span{
+        position: relative;
+        &::after{
+          position: absolute;
+          content: url(../images/index_page/title_img/news.svg);
+          top: rem(-30);
+          right: rem(-15);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// ######################################
+
+// ######### Section - questions ###########
+.questions {
+  padding-top: rem(80);
+  &__accordion {
+    margin-bottom: rem(80);
+  }
+  &__title {
+    margin-bottom: rem(80);
+    h2{
+      span{
+        position: relative;
+        &::after{
+          position: absolute;
+          content: url(../images/index_page/title_img/question.svg);
+          top: rem(-10);
+          right: rem(15);
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+// ######################################
+
+// ######### Section - app ###########
+.app {
+  &__card {
+    position: relative;
+    width: rem(390);
+    height: rem(480);
+    border-radius: 16px;
+    background: var(--background-secondary, #393953);
+    padding: rem(24);
+  }
+  &__card--one{
+    transform: rotate(-3deg);
+    z-index: 10;
+    &::after{
+      position: absolute;
+      content: url(../images/index_page/app/arrow_curved.svg);
+      top: rem(20);
+      right: rem(-70);
+    }
+  }
+  &__card--two{
+    transform: rotate(3deg);
+    margin-top: rem(20);
+    z-index: 9;
+    &::after{
+      position: absolute;
+      content: url(../images/index_page/app/arrow_curved.svg);
+      transform: scale(1, -1);
+      bottom: rem(100);
+      right: rem(-90);
+    }
+  }
+  &__card--three{
+    transform: rotate(-3deg);
+    z-index: 8;
+  }
+  &__card-img {
+    margin-bottom: rem(30);
+  }
+  &__card-title {
+    margin-bottom: rem(15);
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    gap: rem(40);
+  }
+  &__conatiner {
+    margin-bottom: rem(80);
+  }
+  &__title {
+    margin-bottom: rem(80);
+    h2{
+      span{
+        position: relative;
+        &::after{
+          position: absolute;
+          content: url(../images/index_page/title_img/process.svg);
+          top: rem(20);
+          right: rem(10);
+          width: 100%;
+        }
+      }
+    }
   }
 }
 // ######################################
