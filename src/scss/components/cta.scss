@@ -1,0 +1,27 @@
+.cta {
+  &__button {
+  }
+  &__container {
+    padding: rem(80) rem(108);
+  }
+  &__flex {
+    padding: rem(40) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background: var(--brand-gradient, linear-gradient(326deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%));
+
+  }
+  &__text {
+    margin-bottom: rem(10);
+    color: var(--primary-text, #FFF);
+    font-size: rem(18);
+    font-weight: 450;
+    line-height: rem(24); 
+    letter-spacing: -0.252px;
+  }
+  &__title {
+    margin-bottom: rem(40);
+  }
+}
