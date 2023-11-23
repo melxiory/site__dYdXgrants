@@ -40,10 +40,7 @@
       }
 
       .accordion__content {
-        height: max-content;
-
-        /** Установить свои значения */
-        padding: rem(36) rem(8);
+        padding: rem(20);
       }
     }
   }
@@ -74,11 +71,11 @@
 
   // .accordion__content
   &__content {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
 
     /** Установить свои значения */
-    padding: 0 rem(8);
+    padding: 0;
     transition: all 0.3s ease-in-out;
   }
 }

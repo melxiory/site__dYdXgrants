@@ -53,7 +53,11 @@ class Accordion {
   }
 
   toggle(element) {
-    element.classList.toggle(this.options.collapsedClass);
+    if(element.classList.contains(this.options.collapsedClass)){
+      this.close(element);
+    } else {
+      this.open(element);
+    }
 
     if (this.options.shouldOpenAll) {
       this.closeOthers(element);
@@ -62,10 +66,14 @@ class Accordion {
 
   open(element) {
     element.classList.add(this.options.collapsedClass);
+    let content = element.querySelector('.accordion__content')
+    content.style.maxHeight = content.scrollHeight + 20 + 'px'
   }
 
   close(element) {
     element.classList.remove(this.options.collapsedClass);
+    let content = element.querySelector('.accordion__content')
+    content.style.maxHeight = null
   }
 
   closeOthers(currentItem, items) {
