@@ -1,15 +1,31 @@
+// Footer
+// <--######################################-->
 .footer {
-  padding: rem(20) 0;
-  background: var(--black-color);
-
-  // .footer__container
+  &__box {
+    display: flex;
+    gap: rem(32);
+  }
   &__container {
+    padding: rem(80) rem(108) rem(40);
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    max-height: rem(60);
+  }
+  &__menu {
     display: flex;
     align-items: center;
-
-    @include media-mx(510) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+    gap: rem(32);
+  }
+  &__menu-item {
+    color: var(--secondary-text, #C8C7D8);
+    font-family: RationalTWText;
+  }
+  &__socials {
+    display: flex;
+    gap: rem(32);
+    align-items: center;
   }
 }
+// <--######################################-->
