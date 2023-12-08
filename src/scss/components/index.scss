@@ -80,6 +80,9 @@
     width: 100%;
     border-radius: 16px;
     background: var(--background-secondary, #393953);
+    img{
+      width: 100%;
+    }
   }
   &__card-container{
     padding: rem(24);
@@ -97,6 +100,9 @@
   }
   &__container {
     padding: 0 rem(108);
+    @include media-mx(1440){
+      padding: 0 0;
+    }
   }
   &__swiper {
     margin-top: rem(80);
