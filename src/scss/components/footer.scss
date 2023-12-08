@@ -4,19 +4,35 @@
   &__box {
     display: flex;
     gap: rem(32);
+    @include media-mx(810){
+      flex-direction: column;
+      gap: rem(32);
+    }
   }
   &__container {
     padding: rem(80) rem(108) rem(40);
+    @include media-mx(1220){
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
   &__flex {
     display: flex;
     justify-content: space-between;
     max-height: rem(60);
+    @include media-mx(910){
+      flex-direction: column;
+      gap: rem(32);
+    }
   }
   &__menu {
     display: flex;
     align-items: center;
     gap: rem(32);
+    @include media-mx(710){
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &__menu-item {
     color: var(--secondary-text, #C8C7D8);
@@ -26,6 +42,10 @@
     display: flex;
     gap: rem(32);
     align-items: center;
+  }
+  &__logo{
+    width: rem(60);
+    height: rem(60);
   }
 }
 // <--######################################-->

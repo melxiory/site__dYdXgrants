@@ -83,6 +83,10 @@
     img{
       width: 100%;
     }
+    @include media-mx(420){
+      @include adaptiveClamp('height', 560, 480, 410, 320);
+      @include adaptiveClamp('max-width', 390, 280, 410, 320);
+    }
   }
   &__card-container{
     padding: rem(24);

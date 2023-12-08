@@ -65,7 +65,7 @@ new Accordion('.accordion', {
 
 
 const swiper = new Swiper(".swiper", {
-	slidesPerView: 3,
+	slidesPerView: 1,
 	spaceBetween: 25,
 	modules: [Navigation,],
 	navigation: {
@@ -75,20 +75,4 @@ const swiper = new Swiper(".swiper", {
 	},
 });
 
-function myFunction() {
-  if (window.matchMedia("(max-width: 1240px)").matches) { 
-		swiper.params.slidesPerView = 2;
-		swiper.update();
-  } else if (window.matchMedia("(max-width: 840px)").matches) {
-		swiper.params.slidesPerView = 1;
-		swiper.update();
-  } else {
-		swiper.params.slidesPerView = 2;
-		swiper.update();
-	}
-}
 
-myFunction();
-window.addEventListener("resize", function() {
-  myFunction();
-});
