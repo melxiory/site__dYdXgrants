@@ -103,6 +103,17 @@
   }
   &__card-text {
     margin-top: rem(15);
+    @include adaptiveClamp('font-size', 16, 14);
+    @include adaptiveClamp('line-height', 24, 20);
+    @include media-mx(420){
+      max-height: 6.5rem;
+      -webkit-box-orient: vertical;
+      display: block;
+      display: -webkit-box;
+      overflow: hidden!important;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 5;
+    }
   }
   &__cards {
     padding-left: rem(20);
@@ -161,10 +172,16 @@
         position: relative;
         &::after{
           position: absolute;
-          content: url(../images/index_page/title_img/news.svg);
-          top: rem(-30);
-          right: rem(-15);
-          width: 100%;
+          display: block;
+          content: '';
+          background-image: url(../images/index_page/title_img/news.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          @include adaptiveClamp('width', 62, 30);
+          @include adaptiveClamp('height', 60, 28);
+          @include adaptiveClamp('bottom', 20, 15);
+          @include adaptiveClamp('left', 10, 5);
         }
       }
     }

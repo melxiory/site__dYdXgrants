@@ -158,6 +158,9 @@
   height: 48px;
   border-radius: 100px;
   background: var(--base-white, #FFF);
+  @include media-mx(460){
+    display: none;
+  }
 }
 .swiper-button-next{
 	&::after{
@@ -169,6 +172,9 @@
   height: 48px;
   border-radius: 100px;
   background: var(--base-white, #FFF);
+  @include media-mx(460){
+    display: none;
+  }
 }
 .disabled_swiper_button {
   opacity: 0;
