@@ -10,6 +10,9 @@
     display: flex;
     justify-content: center;
     gap: rem(32);
+    @include media-mx(400){
+      flex-direction: column;
+    }
   }
   &__flex {
     margin: 0 auto;
@@ -24,6 +27,9 @@
     display: flex;
     justify-content: center;
     gap: rem(110);
+    @include media-mx(560){
+      flex-direction: column;
+    }
   }
   &__info-text {
     text-align: center;
@@ -101,11 +107,14 @@
   &__cards {
     padding-left: rem(20);
     margin-bottom: rem(80);
+    @include media-mx(1440){
+      padding: 0;
+    }
   }
   &__container {
     padding: 0 rem(108);
     @include media-mx(1440){
-      padding: 0 0;
+      padding: 0 rem(24);
     }
   }
   &__swiper {

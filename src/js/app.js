@@ -65,7 +65,7 @@ new Accordion('.accordion', {
 
 
 const swiper = new Swiper(".swiper", {
-	slidesPerView: 1,
+	slidesPerView: 3,
 	spaceBetween: 25,
 	modules: [Navigation,],
 	navigation: {
@@ -76,3 +76,21 @@ const swiper = new Swiper(".swiper", {
 });
 
 
+function myFunction() {
+  if (window.matchMedia("(min-width: 1260px)").matches) { 
+    swiper.params.slidesPerView = 3;
+		swiper.update();
+  } else if(window.matchMedia("(min-width: 850px)").matches) {
+    swiper.params.slidesPerView = 2;
+		swiper.update();
+  } else {
+		swiper.params.slidesPerView = 1;
+		swiper.update();
+	}
+	console.log(swiper.params.slidesPerView)
+}
+
+myFunction();
+window.addEventListener("resize", function() {
+  myFunction();
+});
